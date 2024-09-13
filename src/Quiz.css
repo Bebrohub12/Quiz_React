@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.home{
+    background: url(images/quiz.webp) no-repeat fixed center/cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.home form{
+    border: 5px solid aqua;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+}
+.home form input,.register form input{
+    padding: 1rem 4rem;
+    margin: 15px 0;
+}
+.home form button , .register form button{
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+}
+::placeholder{
+    color: brown;
+    font-size: 17px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 0 4rem ; 
+    background-color: aqua;
+}
+header a{
+    color: darkgreen;
+}
+.register{
+    background: url(images/register.png) no-repeat fixed center / contain;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.register form{
+    border: 5px solid blue;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+}
+
+.question{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: changecolor 8s infinite alternate linear;
+}
+@keyframes changecolor{
+0%{
+    background-color: #ee6055;
+}
+25%{
+    background-color: #60d394;
+}
+50%{
+    background-color: #aaf683;
+}
+75%{
+    background-color:  #ffd97d;
+}
+100%{
+    background-color: #ff9b85;
+}
+}
+.content{
+    background-color: orange;
+    width:800px;
+    padding: 1rem;
+    height: 400px;
+    border-radius: 20px;
+    animation: changebg 8s infinite alternate linear;
+}
+@keyframes changebg{
+    0%{
+        background-color: #ff9b85;
+    }
+    25%{
+        background-color: #ffd97d;
+    }
+    50%{
+        background-color: #aaf683;
+    }
+    75%{
+        background-color:  #60d394;
+    }
+    100%{
+        background-color: #ee6055;
+    }
+    }
+.content ul li{
+    list-style: none;
+    padding: 0.5rem ;
+}
+.content h1{
+    padding: 1rem 0;
+}
+.content button{
+    background-color: black;
+    color: white;
+    padding: 0.3rem ;
+    margin: 0.5rem;
+}
+
+.score{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.score h1{
+    margin: 2rem 0;
+}
+.wrongquestions{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.wrong:nth-child(3n+1){
+    background-color: pink;
+}
+.wrong{
+    width: 32%;
+    background-color: yellow;
+    margin: 1rem;
+    padding: 3rem;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+   
+}
+.score button{
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+@media all and (max-width: 700px){
+    header{
+        padding: 0;
+    }
+    header a{
+        margin: 0;
+    }
+
+}
+@media all and (max-width: 850px){
+    .content{
+        width:450px;
+        height: 400px;
+    }
+    .wrongquestions{
+        flex-direction: column;
+    }
+    .wrong{
+        width: 70%;
+    }
+
+}
+@media all and (max-width: 550px){
+    .content{
+        width:300px;
+        height: 400px;
+    }
+    header h1{
+        font-size: 25px;
+    }
+
+}
+@media all and (max-width: 450px){
+    .register form,.home form{
+        border: 2px solid blue;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+    }
+    .home form input,.register form input{
+        padding: 0.5rem 2rem;
+        margin: 10px 0;
+    }
+   
+
+}
+  
+
+
+
+
